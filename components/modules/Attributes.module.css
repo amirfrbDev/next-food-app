@@ -10,7 +10,7 @@
 
 .subContainer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .subContainer div {
@@ -31,5 +31,16 @@
 @media (max-width: 900px) {
     .subContainer {
         flex-wrap: wrap;
+    }
+} 
+
+@media (max-width: 385px) {
+    .subContainer {
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .subContainer div{
+        width: 80%;
     }
 } 

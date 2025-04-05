@@ -40,9 +40,16 @@
     margin-top: 80px;
 }
 
+.cards>div {
+    width: 80%;
+}
+
 .cards img {
     margin: auto;
+    margin-top: 40px;
 }
+
+
 
 @media (max-width: 900px) {
     .container {
@@ -67,5 +74,11 @@
     .select select {
         width: 100%;
         margin: 0 0 20px;
+    }
+}
+
+@media (max-width:500px) {
+    .cards img {
+        width: 200px;
     }
 }

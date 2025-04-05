@@ -6,7 +6,7 @@ function Banner() {
     return (
         <div className={styles.container}>
             <div className={styles.left}>
-                <h2>BotoFood</h2>
+                <h2>FoodPocket</h2>
                 <p>Food Delivery and Takeout!</p>
                 <span>
                     BotoFood is an online food ordering and delivery platform launched by

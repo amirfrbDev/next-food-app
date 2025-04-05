@@ -17,6 +17,10 @@
     font-size: 1.9rem;
 }
 
+.subContainer>div {
+    width: 90%;
+}
+
 @media (max-width: 900px) {
     .container {
         padding: 20px;

@@ -52,7 +52,7 @@ function CategoriesPage({ foods }) {
                 </div>
                 <div className={styles.cards}>
                     {!foods.length ?
-                        <img src="/images/search.png" alt="category" /> : null
+                        <img src="/images/search.png" alt="category" className={styles.mapImg} /> : null
                     }
                     {
                         foods?.map(food => <Card key={food.id} {...food} />)
