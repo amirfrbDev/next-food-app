@@ -1,7 +1,9 @@
 import Link from "next/link";
-import styles from "./Card.module.css";
+
 import Location from "../icons/Location";
 import Dollar from "../icons/Dollar";
+
+import styles from "./Card.module.css";
 
 function Card(props) {
     
@@ -9,7 +11,7 @@ function Card(props) {
 
     return (
         <div className={styles.container}>
-            <img src={`/images/${id}.jpeg`} alt={name} />
+            <img src={`/images/${id}.jpeg`} alt={`${name} food image`} />
             <div className={styles.details}>
                 <h4>{name}</h4>
                 <div>

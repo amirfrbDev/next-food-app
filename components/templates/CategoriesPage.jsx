@@ -1,7 +1,9 @@
-import { useEffect, useState } from "react"
-import styles from "./CategoriesPage.module.css"
 import { useRouter } from "next/router"
+import { useEffect, useState } from "react"
+
 import Card from "../modules/Card"
+
+import styles from "./CategoriesPage.module.css"
 
 function CategoriesPage({ foods }) {
 

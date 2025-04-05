@@ -1,4 +1,5 @@
 import Link from "next/link";
+
 import styles from "./Banner.module.css";
 
 function Banner() {
@@ -15,7 +16,7 @@ function Banner() {
                 <Link href="/menu">See All</Link>
             </div>
             <div className={styles.right}>
-                <img src="/images/banner.png" alt="Food image" />
+                <img src="/images/banner.png" alt="Website Banner, Food Image" />
             </div>
         </div>
     );

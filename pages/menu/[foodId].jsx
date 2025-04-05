@@ -32,9 +32,11 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
 
+    // fetching single food data by Id
     const res = await fetch(`${process.env.BASE_URL}/data/${params.foodId}`);
     const data = await res.json();
 
+    // checking if the entered Id exist or not. If not, redirecting the user to 404 page
     if (!data.name) {
         return {
             notFound: true
@@ -43,7 +45,7 @@ export async function getStaticProps({ params }) {
 
     return {
         props: { data },
-        revalidate: 10
+        revalidate: 10 // updates page after 10 seconds (only if requested)
     }
 
 }

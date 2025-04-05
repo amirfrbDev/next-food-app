@@ -1,4 +1,5 @@
 import Card from "../modules/Card"
+
 import styles from "./MenuPage.module.css"
 
 function MenuPage({ data }) {

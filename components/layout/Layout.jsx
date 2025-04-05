@@ -1,4 +1,5 @@
 import Link from "next/link"
+
 import styles from "./Layout.module.css"
 
 function Layout({ children }) {
@@ -17,7 +18,7 @@ function Layout({ children }) {
                 {children}
             </div>
             <footer className={styles.footer}>
-               Made With 🤍 By Amir
+                Made With 🤍 By <a href="https://github.com/amirfrbDev">Amir</a>
             </footer>
         </>
     )

@@ -1,6 +1,7 @@
-import styles from "./DetailsPage.module.css";
 import Location from "../icons/Location";
 import Dollar from "../icons/Dollar";
+
+import styles from "./DetailsPage.module.css";
 
 function DetailsPage(props) {
     const {
