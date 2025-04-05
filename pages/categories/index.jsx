@@ -3,7 +3,7 @@ import CategoriesPage from '../../components/templates/CategoriesPage'
 
 function Categories({foods}) {
   console.log(foods)
-  return <CategoriesPage {...foods} />
+  return <CategoriesPage foods={foods} />
 }
 
 export default Categories
@@ -18,7 +18,7 @@ export async function getServerSideProps({ query: { difficulty, time } }) {
   const filteredData = data.filter(food => {
 
     const difficultyResult = food.details.filter(detail =>
-      detail.Difficulty && detail.Difficulty.toLowerCase() === difficulty.toLowerCase()
+      detail.Difficulty && detail.Difficulty?.toLowerCase() === difficulty?.toLowerCase()
     );
 
     const timeResult = food.details.filter(detail => {
