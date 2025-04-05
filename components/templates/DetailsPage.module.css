@@ -100,7 +100,7 @@
     margin: 24px 0;
 }
 
-.recipe div {
+.recipe>div {
     display: flex;
     align-items: center;
     padding: 20px 10px;

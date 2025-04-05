@@ -7,7 +7,7 @@
 .subContainer {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .container h2 {
@@ -18,7 +18,7 @@
 }
 
 .subContainer>div {
-    width: 90%;
+    width: 40%;
 }
 
 @media (max-width: 900px) {
@@ -39,5 +39,17 @@
 @media (max-width: 600px) {
     .container {
         padding: 10px;
+    }
+
+    .subContainer>div {
+        width: 60%;
+    }
+}
+
+@media (max-width: 450px) {
+    
+
+    .subContainer>div {
+        width: 80%;
     }
 }
