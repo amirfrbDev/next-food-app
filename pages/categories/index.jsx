@@ -12,7 +12,7 @@ export default Categories
 
 export async function getServerSideProps({ query: { difficulty, time } }) {
 
-  const res = await fetch("http://localhost:4000/data");
+  const res = await fetch(`${process.env.BASE_URL}/data`);
   const data = await res.json();
 
   const filteredData = data.filter(food => {
