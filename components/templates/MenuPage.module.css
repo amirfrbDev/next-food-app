@@ -47,9 +47,11 @@
 }
 
 @media (max-width: 450px) {
-    
+    .container {
+        padding: 0px;
+    }
 
     .subContainer>div {
-        width: 80%;
+        width: 100%;
     }
 }
