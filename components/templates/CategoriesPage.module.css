@@ -87,7 +87,7 @@
 }
 
 @media (max-width:500px) {
-    .cards img {
+    .cards .mapImg {
         width: 200px;
     }
 

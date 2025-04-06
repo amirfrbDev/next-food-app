@@ -29,7 +29,10 @@ function CategoriesPage({ foods }) {
     }
 
     const searchHandler = () => {
-        router.push({ pathname: "/categories", query })
+        if (!query.difficulty && !query.time) return;
+        router.push({
+            pathname: "/categories", query
+        })
     }
 
     return (
