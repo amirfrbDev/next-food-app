@@ -79,3 +79,12 @@
 .discount {
     color: #ed4133;
 }
+
+@media (max-width:500px) {
+    .badge {
+        top: 5px;
+        left: 5px;
+        border-width: 2px;
+        font-size: 0.8rem;
+    }
+}
