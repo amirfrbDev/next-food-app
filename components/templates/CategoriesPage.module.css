@@ -87,9 +87,9 @@
 }
 
 @media (max-width:500px) {
-    /* .cards img {
+    .cards img {
         width: 200px;
-    } */
+    }
 
     .cards>div {
         width: 80%;
